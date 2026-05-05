@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Shreyas A - Digital Marketing Expert | Digimkr Media</title>
+    <meta name="description"
+        content="Learn more about Shreyas A, a passionate digital marketer dedicated to helping businesses grow online through SEO, web development, and creative strategies.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #d1d5db;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .editorial-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .gold-text {
+            background: linear-gradient(to right, #B38728, #FBF5B7, #d4af37, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.1em;
+        }
+
+        .gradient-bg {
+            background: radial-gradient(circle at 15% 50%, rgba(36, 142, 156, 0.1), transparent 45%),
+                radial-gradient(circle at 85% 30%, rgba(245, 130, 32, 0.1), transparent 45%),
+                #050505;
+        }
+
+        /* Neon Cursor */
+        #neon-cursor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            background: radial-gradient(circle, rgba(36, 142, 156, 0.6) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99999;
+            transition: width 0.2s, height 0.2s, background 0.2s;
+            transform: translate(-50%, -50%);
+            mix-blend-mode: screen;
+        }
+
+        .cursor-hover {
+            width: 80px !important;
+            height: 80px !important;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.7) 0%, transparent 70%) !important;
+        }
+
+        /* Scroll Animations */
+        .reveal-text {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .reveal-text.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .skill-card {
+            background: rgba(15, 15, 15, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(36, 142, 156, 0.4);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="gradient-bg min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-md shadow-sm border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-4">
+                        <img src="logo.png" alt="Digimkr Media Logo" class="h-10 w-auto rounded hover:scale-105 transition-transform duration-300">
+                        <span class="text-2xl font-light gold-text hidden sm:block">DIGIMKR MEDIA</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium items-center">
+                    <a href="index.html#services" class="text-gray-300 hover:text-[#d4af37] transition">Services</a>
+                    <a href="about.html" class="text-[#d4af37] font-bold border-b-2 border-[#d4af37] pb-1">About Me</a>
+                    <a href="index.html#why-us" class="text-gray-300 hover:text-[#d4af37] transition">Why Choose Us</a>
+                    <a href="feedback.html" class="text-gray-300 hover:text-[#d4af37] transition">Feedback</a>
+                    <a href="login.html" class="text-gray-300 hover:text-[#d4af37] transition flex items-center gap-1">
+                        <i data-lucide="user" class="w-4 h-4"></i> Login
+                    </a>
+                    <a href="index.html#contact"
+                        class="bg-gradient-to-r from-[#248e9c] to-[#1f7087] text-white px-5 py-2.5 rounded-lg hover:shadow-[0_0_15px_rgba(36,142,156,0.6)] transition-all">Get
+                        a Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative py-24 md:py-32 overflow-hidden border-b border-zinc-900">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#d4af37]/5 rounded-full blur-[120px] floating-element" style="animation-delay: -2s;"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#248e9c]/5 rounded-full blur-[120px] floating-element"></div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Avatar/Profile Image Placeholder -->
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden border-2 border-[#d4af37]/30 shadow-2xl relative group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+                    <img src="shreyas.jpg" alt="Shreyas A" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute bottom-6 left-6 z-20">
+                        <p class="text-white font-bold text-lg">Shreyas A</p>
+                        <p class="text-[#d4af37] text-sm uppercase tracking-widest font-semibold">Founder & Lead Strategist</p>
+                    </div>
+                </div>
+
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 editorial-serif text-white uppercase tracking-wider leading-tight">
+                        Driving Results through <br> <span class="gold-text italic">Digital Innovation</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-zinc-400 max-w-2xl leading-relaxed mb-8">
+                        Hi, I’m Shreyas A — a passionate and results-driven digital marketer dedicated to helping businesses grow online.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="index.html#contact" class="bg-gradient-to-r from-[#d4af37] to-[#AA771C] text-black font-bold px-8 py-3.5 rounded-xl hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition transform hover:-translate-y-1">
+                            Let's Work Together
+                        </a>
+                        <div class="flex items-center gap-4 ml-2">
+                            <a href="#" class="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-white hover:border-[#d4af37] transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-white hover:border-[#f58220] transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bio & Mission -->
+    <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="space-y-12 text-center md:text-left">
+                <div class="reveal-text">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Expertise That Matters</h2>
+                    <p class="text-lg md:text-xl text-zinc-400 leading-relaxed">
+                        I specialize in <span class="text-white font-semibold">Digital Marketing, Social Media Marketing, SEO, Website Development, and Content Writing</span>. With a strong understanding of online trends and user behavior, I create strategies that not only increase visibility but also drive real engagement and conversions.
+                    </p>
+                </div>
+
+                <div class="reveal-text" style="transition-delay: 0.2s;">
+                    <p class="text-lg md:text-xl text-zinc-400 leading-relaxed">
+                        From building high-performing websites to crafting compelling content and optimizing search rankings, I focus on delivering solutions that are both creative and data-driven. My goal is simple — to help brands establish a powerful online presence and achieve measurable success.
+                    </p>
+                </div>
+
+                <div class="reveal-text" style="transition-delay: 0.4s;">
+                    <div class="p-8 bg-zinc-900/50 rounded-3xl border-l-4 border-[#d4af37] shadow-xl">
+                        <p class="text-xl md:text-2xl text-white italic leading-relaxed">
+                            "Whether you’re a startup or an established business, I bring the skills and dedication needed to take your digital presence to the next level."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Grid -->
+    <section class="py-24 border-y border-zinc-900 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Core <span class="gold-text">Specialties</span></h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#248e9c] to-[#f58220] mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="skill-card p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-[#248e9c]/10 text-[#248e9c] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="trending-up" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Digital Marketing</h3>
+                    <p class="text-zinc-500 leading-relaxed">End-to-end digital strategies designed to scale your brand and maximize ROI.</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-card p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-[#f58220]/10 text-[#f58220] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="share-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Social Media</h3>
+                    <p class="text-zinc-500 leading-relaxed">Crafting engaging social presence that builds community and drives loyalty.</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-card p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-[#d4af37]/10 text-[#d4af37] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="search" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">SEO Optimization</h3>
+                    <p class="text-zinc-500 leading-relaxed">Dominating search results through data-driven keyword research and technical SEO.</p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-card p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-[#248e9c]/10 text-[#248e9c] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="code" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Web Development</h3>
+                    <p class="text-zinc-500 leading-relaxed">Building high-performing, luxury-grade websites tailored for modern businesses.</p>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="skill-card p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-[#f58220]/10 text-[#f58220] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="pen-tool" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Content Writing</h3>
+                    <p class="text-zinc-500 leading-relaxed">Compelling storytelling that resonates with your audience and drives action.</p>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="skill-card p-8 rounded-3xl flex flex-col items-center justify-center text-center border-dashed border-zinc-700 bg-transparent">
+                    <h3 class="text-xl font-bold text-zinc-400 mb-2">Ready to Start?</h3>
+                    <a href="index.html#contact" class="text-[#d4af37] font-bold hover:underline">Get a Free Proposal &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12 border-t border-zinc-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <img src="logo.png" alt="Digimkr Media Logo" class="h-10 w-auto rounded">
+                <span class="text-xl font-light gold-text">DIGIMKR MEDIA</span>
+            </div>
+            <p class="text-sm">© 2025 Digimkr Media. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-white transition"><i data-lucide="facebook"></i></a>
+                <a href="#" class="hover:text-white transition"><i data-lucide="instagram"></i></a>
+                <a href="#" class="hover:text-white transition"><i data-lucide="linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Init Lucide icons
+        lucide.createIcons();
+
+        // Neon Cursor Logic
+        const cursor = document.createElement('div');
+        cursor.id = 'neon-cursor';
+        document.body.appendChild(cursor);
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Add hover effect to links and buttons
+        const addHoverEffect = () => {
+            const hoverElements = document.querySelectorAll('a, button, .skill-card');
+            hoverElements.forEach(el => {
+                if(!el.dataset.cursorAttached) {
+                    el.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
+                    el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
+                    el.dataset.cursorAttached = 'true';
+                }
+            });
+        };
+        addHoverEffect();
+
+        // Scroll Reveal Animations
+        const revealElements = document.querySelectorAll('.reveal-text, h2, h3, p');
+        revealElements.forEach(el => el.classList.add('reveal-text'));
+
+        const revealObserver = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+
+</html>
